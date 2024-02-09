@@ -1,17 +1,17 @@
 
 import Import from './Import';
 import Tables from './Tables';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Import />} />
         <Route path="/tables" element={<Tables />} />
 
       </Routes>
 
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
